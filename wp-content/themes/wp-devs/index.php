@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" 
-width="<?php echo get_custom_header()->width; ?>" alt="" />
+<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
@@ -15,6 +14,7 @@ width="<?php echo get_custom_header()->width; ?>" alt="" />
                                     ?>
                                         <article>
                                             <h2><?php the_title(); ?></h2>
+                                            <?php the_post_thumbnail( array( 275, 275 ) ); ?>
                                             <div class="meta-info">
                                                 <p>Posted in <?php echo get_the_date(); ?> by <?php the_author_posts_link(); ?></p>
                                                 <p>Categories: <?php the_category( ' ' ); ?></p>
