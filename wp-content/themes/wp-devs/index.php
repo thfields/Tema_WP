@@ -24,6 +24,16 @@
                                         </article>
                                     <?php
                                     endwhile;
+                                    ?>
+                                        <div class="wpdevs-pagination">
+                                            <div class="pages new">
+                                                <?php previous_posts_link( "<< Posts Mais Recente" ); ?>
+                                            </div>
+                                            <div class="pages old">
+                                                <?php next_posts_link( " Posts Anteriores >>" ); ?>
+                                            </div>
+                                        </div>
+                                    <?php
                                 else: ?>
                                     <p>Nothing yet to be displayed!</p>
                             <?php endif; ?>                                
